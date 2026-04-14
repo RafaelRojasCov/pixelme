@@ -1,0 +1,18 @@
+# Swift build artifacts
+.build/
+*.o
+*.d
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# Package resolved (can be committed for reproducibility, excluded here for simplicity)
+Package.resolved
+
+# macOS
+.DS_Store
+*.swp
