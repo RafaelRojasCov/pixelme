@@ -9,10 +9,14 @@ import AppKit
 
 // MARK: - Entry point
 
-// Use NSApplicationMain only on macOS
-let app = NSApplication.shared
-let delegate = AppDelegate()
-app.delegate = delegate
-app.run()
+@main
+@MainActor
+struct PixelMeMain {
+    static func main() {
+        let app = NSApplication.shared
+        let delegate = AppDelegate()
+        app.delegate = delegate
+        app.run()
+    }
+}
 #endif
-
